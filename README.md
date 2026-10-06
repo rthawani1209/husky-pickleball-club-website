@@ -38,6 +38,6 @@ Photo source: supplied by Rohan for this club website. UW palette reference: htt
 
 Real WebGL fragment-shader rendering with signed-distance geometry: hollow perforated sphere, seam, tapered paddle, edge guard, textured face, grip and end cap. Cook-Torrance specular lighting, diffuse environment approximation, ray-marched soft shadows, drag inertia and scroll-driven camera. No added dependencies or external model downloads. This is an illustrative club paddle, not an exact JOOLA product model.
 
-Rendering caps near 25fps with reduced mobile resolution and suspends offscreen. Reduced-motion disables ambient motion/inertia and scroll camera, retaining direct keyboard/drag controls. A non-WebGL text fallback is included. Physical-device performance is not measured.
+Rendering caps near 15fps at a bounded pixel ratio and suspends offscreen. Reduced-motion disables ambient motion/inertia and scroll camera, retaining direct keyboard/drag controls. A non-WebGL text fallback is included. Physical-device performance is not measured.
 
 The current logo is a crop from the supplied screenshot. Replace it with the clean club logo for sharper output.
