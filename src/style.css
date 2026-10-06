@@ -6,3 +6,7 @@ html{scroll-behavior:smooth}body{margin:0;background:#fff}*{box-sizing:border-bo
 @media(max-width:760px){.editorial-stage{width:100%;right:0}.artwork img{object-fit:contain}.editorial-stage{background:#201225}.art-caption{left:10%;right:10%}}
 
 @media(min-width:761px){.editorial-stage{width:59%;right:0}.artwork img{object-fit:contain}.editorial-stage{background:#201225}.editorial-stage:before{background:linear-gradient(90deg,#201225,transparent 23%),linear-gradient(0deg,#201225,transparent 20%,transparent 80%,#201225)}}
+
+.artwork img{mask-image:linear-gradient(0deg,transparent 0%,#000 12%,#000 88%,transparent 100%)}@media(max-width:760px){.editorial-stage{height:330px;top:465px}.artwork img{object-fit:cover;mask-image:linear-gradient(0deg,transparent 0%,#000 14%,#000 82%,transparent 100%)}.art-credit{top:4px}.art-caption{bottom:6px}}
+
+.artwork img{height:auto!important;width:100%;position:absolute;top:50%;transform:translateY(-50%);mask-image:radial-gradient(ellipse 78% 64% at 50% 50%,#000 45%,transparent 100%);object-fit:initial!important}
