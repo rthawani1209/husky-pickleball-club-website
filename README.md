@@ -36,8 +36,8 @@ Photo source: supplied by Rohan for this club website. UW palette reference: htt
 
 ## Interactive hero
 
-A procedural 3D projection drawn with Canvas 2D, not WebGL or a downloaded model. Drag or use arrow keys to rotate the view. Pause and reset controls are available. Reduced-motion preference disables ambient motion and scroll depth by default. Rendering is capped near 30fps with a 1.5 pixel-ratio ceiling and suspended offscreen; no third-party scene package is downloaded. Test on real devices before public launch.
+Real WebGL fragment-shader rendering with signed-distance geometry: hollow perforated sphere, seam, tapered paddle, edge guard, textured face, grip and end cap. Cook-Torrance specular lighting, diffuse environment approximation, ray-marched soft shadows, drag inertia and scroll-driven camera. No added dependencies or external model downloads. This is an illustrative club paddle, not an exact JOOLA product model.
+
+Rendering caps near 25fps with reduced mobile resolution and suspends offscreen. Reduced-motion disables ambient motion/inertia and scroll camera, retaining direct keyboard/drag controls. A non-WebGL text fallback is included. Physical-device performance is not measured.
 
 The current logo is a crop from the supplied screenshot. Replace it with the clean club logo for sharper output.
-
-Design references: https://merlin.studio/work/interxnike and https://www.webgpu.com/showcase/mclaren-f1-driver-lando-norris-official-website/ . Original artwork and club content retained; no source artwork copied.
