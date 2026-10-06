@@ -1,43 +1,26 @@
 # Husky Pickleball Club website
 
-A responsive, front-end-only React + TypeScript website. Includes purple/gold styling, interactive 3D-projected pickleball/paddle, scroll depth, mobile navigation, photo filters and a full-size gallery, club information, board roster, sponsorship, and support/resources links. Respects reduced-motion preferences. No admin portal, server, database, or payment processing.
+A responsive front-end-only React + TypeScript club website with a sports-editorial design, real club photos, high-detail generated equipment illustration, pointer-responsive perspective tilt, smooth section navigation, photo filters and full-size gallery.
 
-## Run locally
+The hero artwork is illustrative, not an exact JOOLA product or a real-time 3D model. It replaces the previous low-frame-rate WebGL hero. Image output is 1536 x 1024 pixels, not native 4K. CSS motion and pointer tilt are browser-composited; physical-device performance has not been measured. Reduced-motion disables tilt and transitions.
 
+## Run
 Requires Node.js 20.19+ or 22+.
 
-```sh
+```
 npm install
 npm run dev
-```
-
-## Build
-
-```sh
 npm run build
 npm run preview
 ```
 
-Deploy `dist/` on any static host with an HTTPS custom domain if desired. A static CDN can serve this without a per-visitor application server; no load testing has been done and capacity depends on the host.
+Deploy dist/ to a static host. No backend or load testing.
 
 ## Content before launch
+- Confirm tryout year for October 11, IMA Gym B, 8-10 PM.
+- Add a public respondent signup link, not the supplied form editor link.
+- Add Spencer's open-play schedule.
+- Confirm Venmo destination and photo permissions before public launch.
+- Replace screenshot-cropped logo with clean original when available.
 
-- Tryouts: October 11, IMA Gym B, 8-10 PM. Year still to be confirmed.
-- Replace the tryout Instagram action with a confirmed public Google Forms respondent link, not the supplied editor link.
-- Add the open play schedule when provided by Spencer.
-- Check the club Venmo destination before public launch.
-- Confirm photo selection and permission for a public club site.
-
-## Editing
-
-Update club text and board entries in `src/App.tsx`; styling is in `src/style.css`. Photos are in `src/photos/`. Uploaded photo quality is preserved without upscaling. The hero is a procedural ball-and-paddle scene; gallery view shows full photos.
-
-Photo source: supplied by Rohan for this club website. UW palette reference: https://www.washington.edu/docs/best-practices/uw-specific/uw-colors-contrast-table/ . Collegiate competition resource: https://ncpaofficial.com/ . Sponsorship, roster and club copy supplied by the club via Rohan.
-
-## Interactive hero
-
-Real WebGL fragment-shader rendering with signed-distance geometry: hollow perforated sphere, seam, tapered paddle, edge guard, textured face, grip and end cap. Cook-Torrance specular lighting, diffuse environment approximation, ray-marched soft shadows, drag inertia and scroll-driven camera. No added dependencies or external model downloads. This is an illustrative club paddle, not an exact JOOLA product model.
-
-Rendering caps near 15fps at a bounded pixel ratio and suspends offscreen. Reduced-motion disables ambient motion/inertia and scroll camera, retaining direct keyboard/drag controls. A non-WebGL text fallback is included. Physical-device performance is not measured.
-
-The current logo is a crop from the supplied screenshot. Replace it with the clean club logo for sharper output.
+Club copy, roster and original club photos supplied by Rohan. Editorial equipment illustration generated for this preview. Original design inspired by the supplied video, with research into https://oryzo.ai/ and https://blog.lusion.co/oryzo-bts-part-3-7-website-ux-ui-and-illustrations . Figma community listings were researched; their previews were unavailable, so no template assets were copied. Colors reference: https://www.washington.edu/docs/best-practices/uw-specific/uw-colors-contrast-table/
