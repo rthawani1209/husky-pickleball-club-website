@@ -30,7 +30,7 @@ Deploy `dist/` on any static host with an HTTPS custom domain if desired. A stat
 
 ## Editing
 
-Update club text and board entries in `src/App.tsx`; styling is in `src/style.css`. Photos are in `src/photos/`. Uploaded photo quality is preserved without upscaling. The hero uses a cropped photo; gallery view shows full images.
+Update club text and board entries in `src/App.tsx`; styling is in `src/style.css`. Photos are in `src/photos/`. Uploaded photo quality is preserved without upscaling. The hero is a procedural ball-and-paddle scene; gallery view shows full photos.
 
 Photo source: supplied by Rohan for this club website. UW palette reference: https://www.washington.edu/docs/best-practices/uw-specific/uw-colors-contrast-table/ . Collegiate competition resource: https://ncpaofficial.com/ . Sponsorship, roster and club copy supplied by the club via Rohan.
 
