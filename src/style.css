@@ -28,3 +28,5 @@ body{font-family:Arial,Helvetica,sans-serif;background:white} .site-shell{max-wi
 .club .court-scene canvas{display:block;user-select:none;-webkit-user-select:none}.club .court-scene{isolation:isolate}.club .scene-controls{background:#110d1b}.club .hero .court-scene{padding:0!important}
 
 @media(max-width:760px){.club .hero{height:745px;min-height:745px}.club .court-scene{top:240px;bottom:130px}.scene-controls{left:10%;right:10%}}
+
+.club .court-scene canvas{clip-path:inset(45px 0 0 0);background:#110d1b}
