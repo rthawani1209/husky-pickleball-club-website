@@ -60,9 +60,7 @@ export function CourtScene() {
           fetchPriority="high"
         />
       </div>
-      <div className="art-caption">
-        <span>THE GAME IS ONLY THE BEGINNING.</span>
-      </div>
+
       <span className="art-credit">ILLUSTRATIVE CLUB EQUIPMENT</span>
     </div>
   );
