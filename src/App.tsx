@@ -1,10 +1,10 @@
 import React, { useEffect, useRef, useState } from 'react';
 import { FileCard, Header, Closing, TextLink } from './ui';
-import team from './photos/8-team.jpg';
-import paddles from './photos/9-paddles.jpg';
-import indoor from './photos/10-indoor.jpg';
-import outdoor from './photos/11-outdoor.jpg';
-import community from './photos/12-community.jpg';
+import team from './photos/2-team.jpg';
+import paddles from './photos/3-paddles.jpg';
+import indoor from './photos/4-indoor.jpg';
+import outdoor from './photos/5-outdoor.jpg';
+import community from './photos/6-community.jpg';
 import './style.css';
 import logo from './photos/13-logo.png';
 import {CourtScene} from './CourtScene';
