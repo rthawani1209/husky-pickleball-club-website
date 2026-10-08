@@ -9,7 +9,7 @@ import './style.css';
 import logo from './photos/13-logo.png';
 import {CourtScene} from './CourtScene';
 const photos = [ {src:team,alt:'Husky players together at an outdoor pickleball tournament',label:'Purple on the road'}, {src:paddles,alt:'Two club players smiling with JOOLA paddles',label:'Game faces. Good company.'}, {src:indoor,alt:'Club members cheering beside an indoor pickleball court',label:'The sideline is part of the team'}, {src:outdoor,alt:'Players rallying on a tree-lined outdoor court',label:'A little fresh air, a lot of rallies'}, {src:community,alt:'Club members gathered together on a porch',label:'Off the court, still a team'} ];
-const board=[['Presidents','Cosmo · Raine · Nick'],['Social media','Molly · Eric'],['Fundraising','Melody · Ada · Annabelle'],['External relations','Jayden'],['Open play coordinator','Spencer'],['General board members','Tati · Rohan']];
+const board=[['Presidents','Cosmo · Raine · Nick'],['Social media','Molly · Eric'],['Fundraising','Melody · Ada · Annabelle'],['External relations','Jayden'],['Open play coordinator','Spencer'],['General board members','Tati'],['Member of Technical Staff','Rohan']];
 const instagram='https://www.instagram.com/huskypickleballclub/';
 export function App(){
  const [menu,setMenu]=useState(false); const [selected,setSelected]=useState<number|null>(null); const [filter,setFilter]=useState('All'); const dialog=useRef<HTMLDialogElement>(null); const ball=useRef<HTMLDivElement>(null);
