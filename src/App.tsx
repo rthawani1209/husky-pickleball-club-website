@@ -23,55 +23,55 @@ const photos: Photo[] = [
   {
     src: winners,
     alt: "Four Husky players holding an NCPA Collegiate Tour bid winner banner",
-    label: "Bid winners. The road to Nationals.",
+    label: "NCPA bid winners",
     court: true,
   },
   {
     src: groupCourt,
     alt: "The whole club posing on a pickleball court",
-    label: "The whole crew",
+    label: "Club group photo",
     court: true,
   },
   {
     src: lawn,
     alt: "Club members laughing together on a lawn",
-    label: "Good company, zero rush",
+    label: "Club gathering",
     court: false,
   },
   {
     src: ncpaBanner,
     alt: "Four club players in front of NCPA and JOOLA banners at a tournament",
-    label: "NCPA weekend",
+    label: "NCPA tournament",
     court: true,
   },
   {
     src: friends,
     alt: "Four club members smiling for a photo indoors",
-    label: "Off the court, still a team",
+    label: "Club members",
     court: false,
   },
   {
     src: sunset,
     alt: "Pickleball courts at dusk under stadium lights during a tournament",
-    label: "Tournament lights",
+    label: "Tournament courts",
     court: true,
   },
   {
     src: interview,
     alt: "Club players being interviewed courtside at a tournament",
-    label: "Mic on, game faces off",
+    label: "Courtside interview",
     court: true,
   },
   {
     src: roadside,
     alt: "Club members laughing in a circle outdoors on a trip",
-    label: "Road trip energy",
+    label: "Club trip",
     court: false,
   },
   {
     src: paddles,
     alt: "Two club players smiling with JOOLA paddles",
-    label: "Game faces. Good company.",
+    label: "Players with JOOLA paddles",
     court: true,
   },
   {
@@ -83,25 +83,25 @@ const photos: Photo[] = [
   {
     src: team,
     alt: "Husky players together at an outdoor pickleball tournament",
-    label: "Purple on the road",
+    label: "Outdoor tournament",
     court: true,
   },
   {
     src: community,
     alt: "Club members gathered together on a porch",
-    label: "Porch season",
+    label: "Club gathering",
     court: false,
   },
   {
     src: indoor,
     alt: "Club members cheering beside an indoor pickleball court",
-    label: "The sideline is part of the team",
+    label: "Indoor pickleball",
     court: true,
   },
   {
     src: outdoor,
     alt: "Players rallying on a tree-lined outdoor court",
-    label: "A little fresh air, a lot of rallies",
+    label: "Outdoor pickleball",
     court: true,
   },
 ];
@@ -268,17 +268,17 @@ export function App() {
           </div>
           <div className="hero-type">
             <p className="eyebrow">
-              <span className="tinyball">✳</span> YOUR NEXT GOOD GAME STARTS
-              HERE
+              <span className="tinyball">✳</span> UW PICKLEBALL CLUB
             </p>
-            <h1>
-              More than
-              <br />a <em>good rally.</em>
+            <h1 className="club-title">
+              Husky
+              <br />
+              <em>Pickleball Club</em>
             </h1>
             <p className="hero-description">
-              A little competition. A lot of community.
+              Competitive and social pickleball
               <br />
-              Pickleball, the Husky way.
+              at the University of Washington.
             </p>
             <div className="actions">
               <a
@@ -286,7 +286,7 @@ export function App() {
                 href="#play"
                 onClick={(e) => go(e, "play")}
               >
-                Find your court <span>↗</span>
+                Explore teams <span>↗</span>
               </a>
               <a
                 className="underlink"
@@ -298,19 +298,11 @@ export function App() {
             </div>
           </div>
           <CourtScene />
-          <div className="hero-bottom">
-            <span>COMPETE. CONNECT. COME AS YOU ARE.</span>
-            <span>SCROLL FOR THE GOOD STUFF ↓</span>
-          </div>
         </section>
         <div className="filmstrip">
           <div className="rv">
             <span className="eyebrow">ON COURT / OFF COURT</span>
-            <p>
-              Same team.
-              <br />
-              <em>Different moments.</em>
-            </p>
+            <p>Club photos</p>
           </div>
           <img className="rv" src={winners} alt={photos[0].alt} />
           <img className="rv" src={lawn} alt={photos[2].alt} />
@@ -319,11 +311,7 @@ export function App() {
         <section id="club" className="section intro">
           <div className="intro-left">
             <p className="eyebrow rv">01 / THE CLUB</p>
-            <h2 className="rv">
-              Built for the game.
-              <br />
-              <em>Made for each other.</em>
-            </h2>
+            <h2 className="rv">About the club</h2>
             <ol className="pillars">
               <li className="rv">
                 <b>01</b>
@@ -346,8 +334,8 @@ export function App() {
                 <div>
                   <h3>Connection</h3>
                   <p>
-                    New friends, familiar faces, and a reason to keep showing
-                    up.
+                    Meet other UW students through pickleball and club
+                    activities.
                   </p>
                 </div>
               </li>
@@ -359,14 +347,11 @@ export function App() {
           </div>
           <div className="intro-right">
             <p className="lead rv">
-              We bring competition and a fun, social atmosphere together.
+              Husky Pickleball Club at the University of Washington.
             </p>
             <p className="rv">
-              Our club connects pickleball lovers on and off the court, with a
-              competitive travel team and a larger social team that comes
-              together for monthly open plays. Whether you're chasing the next
-              tournament or your next favorite rally, there's a place to
-              connect.
+              The club has a competitive travel team and a social team that
+              meets for monthly open plays.
             </p>
             <div className="intro-photo rv">
               <img
@@ -374,7 +359,6 @@ export function App() {
                 alt="Four club players holding an NCPA Collegiate Tour bid winner banner on court"
                 loading="lazy"
               />
-              <span>ONE CLUB. EVERY KIND OF PLAYER.</span>
             </div>
             <div className="intro-duo">
               <img
@@ -395,18 +379,9 @@ export function App() {
         <section id="play" className="section">
           <div className="sectionhead rv">
             <div>
-              <p className="eyebrow">02 / FIND YOUR COURT</p>
-              <h2>
-                Two ways to play.
-                <br />
-                One Husky community.
-              </h2>
+              <p className="eyebrow">02 / TEAMS</p>
+              <h2>Two ways to play</h2>
             </div>
-            <span className="smallnote">
-              Come for the game.
-              <br />
-              Stay for the people.
-            </span>
           </div>
           <div className="playgrid">
             <article className="playcard competitive rv">
@@ -450,19 +425,12 @@ export function App() {
               <img className="play-bg" src={outdoor} alt="" />
               <span className="cardnumber">02</span>
               <h3>The social team</h3>
-              <p>
-                Monthly open plays that bring our larger club community
-                together. Good games, familiar faces, and room to connect.
-              </p>
+              <p>Monthly open plays for the club's social team.</p>
               <div className="event">
                 <span className="eyebrow">OPEN PLAY</span>
-                <strong>
-                  Next session?
-                  <br />
-                  Stay in the loop.
-                </strong>
+                <strong>Open play schedule</strong>
                 <small>
-                  The open play schedule is on its way.
+                  The schedule will be posted when available.
                   <br />
                   Check Instagram for club updates.
                 </small>
@@ -482,11 +450,7 @@ export function App() {
           <div className="sectionhead rv">
             <div>
               <p className="eyebrow">THIS SEASON'S SPONSORS</p>
-              <h2>
-                Backed by people
-                <br />
-                <em>who love the game.</em>
-              </h2>
+              <h2>Our sponsors</h2>
             </div>
           </div>
           <div className="sponsorgrid">
@@ -522,7 +486,7 @@ export function App() {
           <div className="sectionhead rv">
             <div>
               <p className="eyebrow">03 / CLUB LIFE</p>
-              <h2>This is our kind of court.</h2>
+              <h2>Memories on and off court</h2>
             </div>
             <div className="filters" aria-label="Photo categories">
               {["All", "On court", "Off court"].map((v) => (
@@ -557,7 +521,7 @@ export function App() {
           </p>
         </section>
         <section id="board" className="section boardsection">
-          <p className="eyebrow rv">04 / THE PEOPLE BEHIND THE PLAY</p>
+          <p className="eyebrow rv">04 / THE PEOPLE BEHIND THE CLUB</p>
           <h2 className="rv">Meet the board.</h2>
           <div className="boardgrid">
             {board.map(([role, names]) => (
@@ -570,12 +534,8 @@ export function App() {
         </section>
         <section id="support" className="section support">
           <div className="rv">
-            <p className="eyebrow">05 / BACK THE HUSKIES</p>
-            <h2>
-              Help us take
-              <br />
-              our game further.
-            </h2>
+            <p className="eyebrow">05 / SUPPORT THE CLUB</p>
+            <h2>Support the team</h2>
             <p>
               If you'd like to support the UW team's competition in the NCPA,
               you can find us on Venmo at <strong>@HuskyPickleball</strong>.
@@ -591,8 +551,8 @@ export function App() {
             <small>Opens our Venmo profile. No payment is made here.</small>
           </div>
           <div className="resources rv">
-            <h3>Follow the collegiate game.</h3>
-            <p>Tournaments, rankings, and the road to nationals.</p>
+            <h3>NCPA information</h3>
+            <p>Collegiate pickleball tournaments and rankings.</p>
             <TextLink href="https://ncpaofficial.com/">
               Explore the NCPA
             </TextLink>
@@ -602,11 +562,7 @@ export function App() {
           <div className="sectionhead rv">
             <div>
               <p className="eyebrow">06 / CONTACT US</p>
-              <h2>
-                Let's talk
-                <br />
-                <em>pickleball.</em>
-              </h2>
+              <h2>Contact us</h2>
             </div>
             <span className="smallnote">
               Questions about the club, tryouts,
