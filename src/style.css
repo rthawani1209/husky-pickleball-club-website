@@ -1357,3 +1357,15 @@ body {
   }
 }
 
+/* Fit the full club name in the existing two-line hero layout. */
+.club .hero h1.club-title {
+  font-size: clamp(58px, 6vw, 76px) !important;
+  letter-spacing: -3px !important;
+}
+@media (max-width: 760px) {
+  .club .hero h1.club-title {
+    font-size: 43px !important;
+    letter-spacing: -2px !important;
+  }
+}
+
