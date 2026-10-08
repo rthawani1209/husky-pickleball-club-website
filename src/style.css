@@ -12,3 +12,6 @@ html{scroll-behavior:smooth}body{margin:0;background:#fff}*{box-sizing:border-bo
 .artwork img{height:auto!important;width:100%;position:absolute;top:50%;transform:translateY(-50%);mask-image:radial-gradient(ellipse 78% 64% at 50% 50%,#000 45%,transparent 100%);object-fit:initial!important}
 
 @media(max-width:760px){.hero{min-height:750px}.editorial-stage{top:370px;height:330px}.art-caption{bottom:3px}.art-credit{top:53px}.hero-bottom{bottom:17px}}
+
+
+.cardactions{display:flex;align-items:center;gap:22px;flex-wrap:wrap}.cardactions .underlink{color:#fff2dd}
