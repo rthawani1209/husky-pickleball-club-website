@@ -126,6 +126,8 @@ const tabs = [
 ];
 const tryoutForm =
   "https://docs.google.com/forms/d/e/1FAIpQLSdv2k5x-bVMLG1mjtz4mzIa9k2oYeAvyB79FOkhdiKbbA1yOw/viewform";
+const goFundMe =
+  "https://www.gofundme.com/f/support-uw-huskies-at-national-pickleball-championships-47r9e?attribution_id=sl:f051d4d8-787b-4a1f-a488-5d70322de7fa&lang=en_CA&ts=1791426490&utm_campaign=man_sharesheet_dash&utm_content=amp30-treatment-1&utm_medium=customer&utm_source=sms";
 const instagram = "https://www.instagram.com/huskypickleballclub/";
 export function App() {
   // Navigation, gallery filters, and the full-size photo viewer are local UI state.
@@ -261,7 +263,7 @@ export function App() {
             </a>
           </div>
         </nav>
-        <section id="home" className="hero">
+        <section id="home" className="hero photo-hero">
           <div className="hero-topline">
             <span>UNIVERSITY OF WASHINGTON</span>
             <span>SEATTLE, WA</span>
@@ -536,26 +538,42 @@ export function App() {
           <div className="rv">
             <p className="eyebrow">05 / SUPPORT THE CLUB</p>
             <h2>Support the team</h2>
-            <p>
-              If you'd like to support the UW team's competition in the NCPA,
-              you can find us on Venmo at <strong>@HuskyPickleball</strong>.
-            </p>
-            <a
-              className="btn purple"
-              href="https://venmo.com/HuskyPickleball"
-              target="_blank"
-              rel="noreferrer"
-            >
-              Support on Venmo ↗
-            </a>
-            <small>Opens our Venmo profile. No payment is made here.</small>
+            <p>Donations support Husky Pickleball Club.</p>
+            <div className="donation-actions">
+              <a
+                className="btn gold donate-button"
+                href={goFundMe}
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Donate on GoFundMe <span aria-hidden="true">↗</span>
+              </a>
+              <a
+                className="donation-secondary"
+                href="https://venmo.com/HuskyPickleball"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Donate on Venmo <span aria-hidden="true">↗</span>
+              </a>
+            </div>
           </div>
           <div className="resources rv">
-            <h3>NCPA information</h3>
-            <p>Collegiate pickleball tournaments and rankings.</p>
-            <TextLink href="https://ncpaofficial.com/">
-              Explore the NCPA
-            </TextLink>
+            <a
+              className="ncpa-card"
+              href="https://ncpaofficial.com/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <div className="ncpa-card-heading">
+                <h3>NCPA information</h3>
+                <span className="ncpa-arrow" aria-hidden="true">
+                  ↗
+                </span>
+              </div>
+              <p>Tournaments, rankings and match coverage.</p>
+              <span className="ncpa-card-action">Visit the NCPA website</span>
+            </a>
           </div>
         </section>
         <section id="contact" className="section contactsec">
@@ -640,4 +658,3 @@ export function App() {
     </FileCard>
   );
 }
-
