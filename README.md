@@ -6,10 +6,11 @@ Built with React 19, TypeScript and Vite. Front end only: there is no backend, d
 
 ## What it does
 
-- **Single-page layout** with sticky navigation (Club, Play, Photos, Board, Support) that scrolls to each section, plus a mobile menu.
+- **Single-page layout** with sticky navigation (Club, Play, Sponsors, Photos, Board, Support) that scrolls to each section, shows a gold active-section line, plus a mobile menu.
 - **Play section** describing the competitive travel team and the social team, with a tryout signup button that opens the club's public Google Form.
 - **Photo gallery** with category filters (All, On court, Off court) and a full-size viewer with previous/next buttons, keyboard arrow keys, Escape to close.
-- **Board section**, **sponsor section** and **support section** (Venmo and NCPA links, club Instagram).
+- **Scroll reveals**: text and images fade in and out as you scroll up and down; disabled under `prefers-reduced-motion`.
+- **Board section**, **sponsor section** (JOOLA and The Picklr Fremont) and **support section** (Venmo and NCPA links, club Instagram).
 - **Hero artwork** with pointer-responsive tilt and a pause toggle. Respects `prefers-reduced-motion`.
 - Responsive from phone to desktop, tested at 390px and 1440px wide.
 
