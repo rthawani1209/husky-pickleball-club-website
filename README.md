@@ -1,26 +1,62 @@
-# Husky Pickleball Club website
+# Husky Pickleball Club Website
 
-A responsive front-end-only React + TypeScript club website with a sports-editorial design, real club photos, high-detail generated equipment illustration, pointer-responsive perspective tilt, smooth section navigation, photo filters and full-size gallery.
+A responsive front-end website for the Husky Pickleball Club at the University of Washington. It presents the club, its two ways to play, tryout signup, a photo gallery, the board, and ways to support the team.
 
-The hero artwork is illustrative, not an exact JOOLA product or a real-time 3D model. It replaces the previous low-frame-rate WebGL hero. Image output is 1536 x 1024 pixels, not native 4K. CSS motion and pointer tilt are browser-composited; physical-device performance has not been measured. Reduced-motion disables tilt and transitions.
+Built with React 19, TypeScript and Vite. Front end only: there is no backend, database or admin portal.
 
-## Run
+## What it does
+
+- **Single-page layout** with sticky navigation (Club, Play, Photos, Board, Support) that scrolls to each section, plus a mobile menu.
+- **Play section** describing the competitive travel team and the social team, with a tryout signup button that opens the club's public Google Form.
+- **Photo gallery** with category filters (All, On court, Off court) and a full-size viewer with previous/next buttons, keyboard arrow keys, Escape to close.
+- **Board section**, **sponsor section** and **support section** (Venmo and NCPA links, club Instagram).
+- **Hero artwork** with pointer-responsive tilt and a pause toggle. Respects `prefers-reduced-motion`.
+- Responsive from phone to desktop, tested at 390px and 1440px wide.
+
+## Tech
+
+| Area | Choice |
+| --- | --- |
+| UI | React 19 + TypeScript |
+| Build | Vite 6 |
+| Styling | Plain CSS (custom properties, grid, flexbox), UW purple and gold palette |
+| Interaction | IntersectionObserver reveal, native `<dialog>` for the photo viewer |
+
+## Run locally
+
 Requires Node.js 20.19+ or 22+.
 
-```
+```bash
 npm install
-npm run dev
-npm run build
-npm run preview
+npm run dev       # dev server
+npm run build     # type-check and production build into dist/
+npm run preview   # serve the production build
 ```
 
-Deploy dist/ to a static host. No backend or load testing.
+## Deploy
 
-## Content before launch
-- Confirm tryout year for October 11, IMA Gym B, 8-10 PM.
-- Add a public respondent signup link, not the supplied form editor link.
-- Add Spencer's open-play schedule.
-- Confirm Venmo destination and photo permissions before public launch.
-- Replace screenshot-cropped logo with clean original when available.
+The site is a static build, so any static host works. Build settings for Netlify, Vercel or Cloudflare Pages:
 
-Club copy, roster and original club photos supplied by Rohan. Editorial equipment illustration generated for this preview. Original design inspired by the supplied video, with research into https://oryzo.ai/ and https://blog.lusion.co/oryzo-bts-part-3-7-website-ux-ui-and-illustrations . Figma community listings were researched; their previews were unavailable, so no template assets were copied. Colors reference: https://www.washington.edu/docs/best-practices/uw-specific/uw-colors-contrast-table/
+- Build command: `npm run build`
+- Output directory: `dist`
+- Node version: 20.19+ or 22+
+
+To redeploy after an edit: commit and push to `main`. A host connected to this repo rebuilds automatically. For a manual deploy, run `npm run build` and upload the `dist/` folder.
+
+## Quality checks
+
+The site was checked in headless Chrome at desktop (1440px) and mobile (390px) widths:
+
+- Every nav link and the mobile menu scroll to the correct section.
+- All 14 images load, and there is no horizontal overflow.
+- Photo viewer opens, steps through all photos, filters work, and it closes.
+- External links (tryout form, Venmo, NCPA, Instagram) have the correct targets.
+- No console errors or failed requests.
+
+## Status and open items
+
+- Open play schedule is not published yet (coming from the club's open play coordinator).
+- The tryout date shown is October 11, IMA Gym B, 8-10 PM. The year is not shown on the site.
+- The logo is cropped from a screenshot; a clean original would look sharper.
+
+The hero artwork is an illustration, not a real product photo or a live 3D model. Club photos and copy come from the club.
