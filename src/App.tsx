@@ -203,15 +203,13 @@ export function App() {
   const go = (e: React.MouseEvent<HTMLAnchorElement>, id: string) => {
     e.preventDefault();
     setMenu(false);
-    requestAnimationFrame(() => {
-      document.getElementById(id)?.scrollIntoView({
-        behavior: window.matchMedia("(prefers-reduced-motion: reduce)").matches
-          ? "auto"
-          : "smooth",
-        block: "start",
-      });
-      history.replaceState(null, "", "#" + id);
+    document.getElementById(id)?.scrollIntoView({
+      behavior: window.matchMedia("(prefers-reduced-motion: reduce)").matches
+        ? "auto"
+        : "smooth",
+      block: "start",
     });
+    history.replaceState(null, "", "#" + id);
   };
   const visible = photos
     .map((p, i) => ({ ...p, i }))
@@ -355,6 +353,7 @@ export function App() {
               The club has a competitive travel team and a social team that
               meets for monthly open plays.
             </p>
+            <p className="rv">The club plays on all 8 courts at the IMA.</p>
             <div className="intro-photo rv">
               <img
                 src={winnersWide}
@@ -396,8 +395,13 @@ export function App() {
               </p>
               <div className="event">
                 <span className="eyebrow">TRYOUTS</span>
-                <strong>October 11</strong>
-                <span>IMA Gym B · 8-10 PM</span>
+                <strong>Friday, October 16</strong>
+                <span>Session 4 · 5-7 PM</span>
+                <span>Session 5 · 7-9 PM</span>
+                <span>IMA Gym B</span>
+                <small className="tryout-note">
+                  If you already came to session 1 or 2, no need to come again.
+                </small>
                 <small>
                   Fill out the short form to be considered.
                   <br />
