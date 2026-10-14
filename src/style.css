@@ -459,6 +459,13 @@ body {
   line-height: 1.6;
   color: #dacddc;
 }
+
+.event .tryout-note {
+  margin-top: 6px;
+  padding-top: 10px;
+  border-top: 1px solid rgba(244, 240, 232, 0.16);
+  color: #e9e2e9;
+}
 .outline {
   border: 1px solid #ffffff88;
   color: #fff2dd;
@@ -1555,4 +1562,4 @@ body {
   .club-photo-stage .artwork {
     transform: none !important;
   }
-}
+        }
