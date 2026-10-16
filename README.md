@@ -1,12 +1,5 @@
 # Husky Pickleball Club Website
 
-A responsive front-end website for the Husky Pickleball Club at the University of Washington. It presents the club, its two ways to play, tryout signup, a photo gallery, the board, and ways to support the team.
-
-Built with React 19, TypeScript and Vite. Front end only: there is no backend, database or admin portal.
-
-## What it does
-
-
 **Live site: https://husky-pickleball-club-website.vercel.app/**
 
 A responsive single-page website for the Husky Pickleball Club at the University of Washington. I built it as the club's Member of Technical Staff and it is the club's live public site.
